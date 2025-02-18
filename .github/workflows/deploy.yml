@@ -12,7 +12,7 @@ jobs:
       - name: Load and Cache dependencies
         uses: ./.github/actions/cached-deps
         with:
-          caching: 'false'
+          caching: 'true'
       - name: Output Information
         run: echo "Cache used? ${{ steps.cache-deps.outputs.used-cache }}"
       - name: Lint code
